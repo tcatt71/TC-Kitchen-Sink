@@ -29,3 +29,28 @@ checkAge('Charles', 21);
 checkAge('Abby', 27);
 checkAge('James', 18);
 checkAge('John', 17);
+
+const favoriteVegetibles = ['peppers', 'onions', 'melons'];
+
+favoriteVegetibles.forEach(function (value) {
+  console.log(value);
+});
+
+const people = [
+  { firstName: 'Sara', age: 22, },
+  { firstName: 'Tony', age: 27, },
+  { firstName: 'Abigail', age: 16, },
+  { firstName: 'Bill', age: 15, },
+  { firstName: 'Jen', age: 32, }
+];
+
+people.forEach(function (value) {
+  checkAge(value.firstName, value.age);
+});
+
+function getLength(word) {
+  prompt(word.length);
+}
+
+userWord = prompt('Enter word');
+getLength(userWord);
