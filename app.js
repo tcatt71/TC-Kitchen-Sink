@@ -48,9 +48,15 @@ people.forEach(function (value) {
   checkAge(value.firstName, value.age);
 });
 
+let word = 'Hello World';
+
 function getLength(word) {
-  prompt(word.length);
+  if (word.length % 2 === 0) {
+    return 'The world is nice and even!';
+  } else {
+    return 'The world is an odd place!';
+  }
 }
 
-userWord = prompt('Enter word');
-getLength(userWord);
+let result = getLength(word);
+console.log(result);
